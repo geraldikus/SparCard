@@ -7,12 +7,29 @@
 
 import SwiftUI
 
-struct MainImageVIew: View {
+struct MainImageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .topLeading) {
+            Button {
+                print("Main image pressed")
+            } label: {
+                Image("lipa")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 330, height: 220)
+                    .padding(.top, 50)
+            }
+            Text("Цена по карте")
+                .padding(.horizontal, 8)
+                .padding(.vertical, 5)
+                .background(Color.green)
+                .foregroundColor(.white)
+                .cornerRadius(5)
+        }
+        .padding(.trailing, 20)
     }
 }
 
 #Preview {
-    MainImageVIew()
+    MainImageView()
 }

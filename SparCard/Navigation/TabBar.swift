@@ -40,26 +40,30 @@ struct TabBar: View {
                     }) {
                         Image(systemName: "arrow.backward")
                             .foregroundColor(.green)
+                            .font(.system(size: 16, weight: .bold))
                     },
                 trailing:
                     HStack {
                         Button(action: {
-                            // действие при нажатии на первую кнопку справа
+                            
                         }) {
                             Image(systemName: "list.clipboard")
                                 .foregroundColor(.green)
+                                .font(.system(size: 16, weight: .bold))
                         }
                         Button(action: {
-                            // действие при нажатии на вторую кнопку справа
+                            
                         }) {
                             Image(systemName: "square.and.arrow.up")
                                 .foregroundColor(.green)
+                                .font(.system(size: 16, weight: .bold))
                         }
                         Button(action: {
-                            // действие при нажатии на третью кнопку справа
+                            
                         }) {
                             Image(systemName: "heart")
                                 .foregroundColor(.green)
+                                .font(.system(size: 16, weight: .bold))
                         }
                     }
             )
